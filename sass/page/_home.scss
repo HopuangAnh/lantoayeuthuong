@@ -335,6 +335,22 @@
           .productSlider{
             padding-bottom: 60px;
           }
+          .swiper-button-next {
+            z-index: 5;
+            right: 0;
+            &::after {
+              font-size: 1.4rem;
+              color: #fff;
+            }
+          }
+          .swiper-button-prev {
+            z-index: 5;
+            left: 0;
+            &::after {
+              font-size: 1.4rem;
+              color: #fff;
+            }
+          }
           &:hover .swiper-button-next {
             transition: 0.3s ease-in-out;
             display: flex;
@@ -561,6 +577,9 @@
     .product-sda {
       width: 330px;
       margin-left: 15px;
+      .img {
+        object-fit: cover;
+      }
       &:hover .img{
         transform: translate(-50%, -50%) scale(1.1);
       }

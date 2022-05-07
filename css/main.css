@@ -733,7 +733,6 @@
 .home {
   overflow: hidden;
   background-color: #f6f6f6;
-    
 }
 .home-top:hover .swiper-button-next {
   transition: 0.3s ease-in-out;
@@ -1059,6 +1058,22 @@
 .home .product-box-list .product-tab .productSlider {
   padding-bottom: 60px;
 }
+.home .product-box-list .product-tab .swiper-button-next {
+  z-index: 5;
+  right: 0;
+}
+.home .product-box-list .product-tab .swiper-button-next::after {
+  font-size: 1.4rem;
+  color: #fff;
+}
+.home .product-box-list .product-tab .swiper-button-prev {
+  z-index: 5;
+  left: 0;
+}
+.home .product-box-list .product-tab .swiper-button-prev::after {
+  font-size: 1.4rem;
+  color: #fff;
+}
 .home .product-box-list .product-tab:hover .swiper-button-next {
   transition: 0.3s ease-in-out;
   display: flex;
@@ -1276,6 +1291,9 @@
 .home .with-sda .product-sda {
   width: 330px;
   margin-left: 15px;
+}
+.home .with-sda .product-sda .img {
+  object-fit: cover;
 }
 .home .with-sda .product-sda:hover .img {
   transform: translate(-50%, -50%) scale(1.1);
@@ -2178,9 +2196,6 @@
   .footer .form-txt {
     width: 70%;
   }
-}
-.product {
-    
 }
 .product .market {
   padding: 0 15px;
@@ -4471,7 +4486,6 @@
 }
 .banner.shortcut {
   text-align: left;
-    
   height: 100%;
   padding: 10px 0;
   overflow: hidden;
@@ -5620,9 +5634,6 @@
   width: 100%;
   overflow: hidden;
 }
-.payment .banner {
-    
-}
 .payment-main .container {
   display: flex;
   flex-wrap: wrap;
@@ -6165,9 +6176,6 @@
 .watch-cart .cart {
   width: 100%;
   overflow: hidden;
-}
-.watch-cart .cart .banner {
-    
 }
 .watch-cart .cart-main {
   position: relative;

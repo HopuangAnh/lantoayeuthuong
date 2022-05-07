@@ -1,0 +1,51 @@
+@keyframes cartFail {
+    from {
+      top: calc(100% + 100px);
+      opacity: 0;
+    }
+    to {
+      top: calc(100% + 40px);
+      opacity: 1;
+    }
+  }
+@keyframes navAnimate {
+  from {
+    left: 50px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+@keyframes listAnimate {
+  from {
+    height: 0;
+  }
+  to {
+    height: 80vh;
+  }
+}
+@keyframes fadeContentUp {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes zoomAnimate {
+  0%{
+    -webkit-transform:translate(-50%, -50%) scale(0.6);
+    transform:translate(-50%, -50%) scale(0.6);
+    opacity: 0.5;
+  }
+  100%{
+    -webkit-transform:translate(-50%, -50%) scale(1.1);
+    transform:translate(-50%, -50%) scale(1.1);
+    opacity: 0;
+  }
+}
